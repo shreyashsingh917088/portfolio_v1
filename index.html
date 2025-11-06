@@ -1,0 +1,156 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SHREYASH SINGH — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <img src="laptop wlaal.jpg" alt="Shreyash logo" class="logo-img" />
+        <div class="brand-text">
+          <h1 class="name">SHREYASH SINGH</h1>
+          <p class="muted">Web Developer • Learner</p>
+        </div>
+      </div>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="btn-small" aria-label="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h2 class="typing">Hi, I'm <span class="accent">Shreyash singh</span></h2>
+          <p class="lead">A responsible and detail-oriented web developer building modern, accessible and user-friendly web experiences.</p>
+          <div class="cta-row">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+          <div class="quick-stats">
+            <div><strong>5+</strong><span>Projects</span></div>
+            <div><strong>2+</strong><span>Internships</span></div>
+            <div><strong>3+</strong><span>Languages</span></div>
+          </div>
+        </div>
+        <div class="hero-card animate-up">
+          <img src="laptop wlaal.jpg" alt="Shreyash photo" class="hero-photo" />
+          <p class="muted small">A clean & responsive portfolio — now with project pages and animations</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h3>About Me</h3>
+      <div class="about-grid">
+        <div>
+          <p>I'm <strong>Shreyash Singh</strong>, a web developer focused on building clean and accessible user experiences using HTML, CSS and JavaScript. I enjoy learning new technologies and turning ideas into working projects.</p>
+          <ul class="about-list">
+            <li><strong>Location:</strong> India</li>
+            <li><strong>Goal:</strong> Become a skilled web developer and grow into software roles</li>
+            <li><strong>Interests:</strong> Frontend, UI design, small games, automation</li>
+          </ul>
+        </div>
+        <div class="card animate-up">
+          <h4>Contact Info</h4>
+          <p>Email: <a href="mailto:shreyashsingh225550@gmail.com">shreyashsingh225550</a></p>
+          <p>Phone: +91-9170887380</p>
+          <div class="socials">
+            <a href="#" aria-label="GitHub">GitHub</a> ·
+            <a href="#" aria-label="shreyashsingh">LinkedIn</a> ·
+            <a href="#" aria-label="Shreyash singh(1).pdf">Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h3>Skills</h3>
+      <div class="skills-grid">
+        <div class="skill"><h4>HTML</h4><div class="bar"><span style="width:90%"></span></div></div>
+        <div class="skill"><h4>CSS</h4><div class="bar"><span style="width:85%"></span></div></div>
+        <div class="skill"><h4>JavaScript</h4><div class="bar"><span style="width:75%"></span></div></div>
+        <div class="skill"><h4>React (Basics)</h4><div class="bar"><span style="width:60%"></span></div></div>
+        <div class="skill"><h4>Git</h4><div class="bar"><span style="width:70%"></span></div></div>
+        <div class="skill"><h4>Database</h4><div class="bar"><span style="width:50%"></span></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h3>Projects</h3>
+      <p class="muted">Click Demo or Code to open the full project page.</p>
+      <div class="projects-grid">
+        <article class="project-card animate-up">
+          <div class="project-media">📱</div>
+          <h4>Responsive Landing Page of IRCTC</h4>
+          <p class="muted small">A modern landing page built with HTML & CSS.</p>
+          <div class="project-actions">
+  <a class="btn-small ghost" href="irctc-landing/irctc.html" target="_blank">open</a>
+            <a class="btn-small ghost" href="projects/project1.html#code" target="_blank">Code</a>
+          </div>
+        </article>
+        <article class="project-card animate-up">
+          <div class="project-media">🕹️</div>
+          <h4>Mini Driving Game</h4>
+          <p class="muted small">A simple Dr. Driving-style game using JS canvas.</p>
+          <div class="project-actions">
+            <a class="btn-small" href="projects/project2.html" target="_blank">Demo</a>
+            <a class="btn-small ghost" href="projects/project2.html#code" target="_blank">Code</a>
+          </div>
+        </article>
+        <article class="project-card animate-up">
+          <div class="project-media">📂</div>
+          <h4>Hospital Management App (UI)</h4>
+          <p class="muted small">A patient record UI with forms and validations.</p>
+          <div class="project-actions">
+            <a class="btn-small" href="projects/project3.html" target="_blank">Demo</a>
+            <a class="btn-small ghost" href="projects/project3.html#code" target="_blank">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container bottom-panel">
+      <h3>Get in touch / Tell me who you are</h3>
+      <p class="muted">Select a user type and leave a message — I'll reply quickly.</p>
+      <div class="user-types">
+        <button class="chip" data-type="Visitor">Visitor</button>
+        <button class="chip" data-type="Recruiter">Recruiter</button>
+        <button class="chip" data-type="Client">Client</button>
+        <button class="chip" data-type="Dev">Fellow Developer</button>
+      </div>
+      <form id="contactForm" class="contact-form" action="#" onsubmit="return false;">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="email" id="email" placeholder="Your email" required />
+        <textarea id="message" rows="5" placeholder="Type your message or project idea..."></textarea>
+        <div class="form-row">
+          <button class="btn" id="sendBtn" type="submit">Send Message</button>
+          <div id="selectedType" class="muted small">Selected: <strong>Visitor</strong></div>
+        </div>
+      </form>
+      <div id="formNotice" role="status" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© 2025 <strong>SHREYASH SINGH</strong>. All rights reserved.</div>
+      <div class="muted">Made with ❤️ — Responsive & accessible</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+"""

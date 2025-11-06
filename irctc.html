@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IRCTC - Landing Page (Demo)</title>
+  <a href="irctc-landing/irctc.html" target="_blank">
+  <button>View IRCTC Landing Page Project</button>
+</a>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #f5f7fa;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #0a3d62;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #f1c40f;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      background: url('https://images.unsplash.com/photo-1501700493789-cbe6f9a3a6a5?auto=format&fit=crop&w=1400&q=80') no-repeat center/cover;
+      padding: 0 10%;
+    }
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    .hero button {
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      background: #f1c40f;
+      color: #000;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .hero button:hover {
+      background: #fff;
+    }
+
+    /* SEARCH SECTION */
+    .search-box {
+      max-width: 900px;
+      background: white;
+      margin: -40px auto 40px;
+      padding: 20px;
+      display: flex;
+      gap: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .search-box button {
+      width: 100%;
+      padding: 12px;
+      background: #0a3d62;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* FEATURES SECTION */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 20px;
+      padding: 40px 10%;
+    }
+    .feature-card {
+      background: white;
+      padding: 25px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform .3s;
+    }
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #0a3d62;
+      padding: 30px;
+      text-align: center;
+      color: white;
+      margin-top: 40px;
+    }
+      
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IRCTC (Demo)</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Book Train Tickets Easily</h2>
+    <p>Fast, Secure & Reliable Train Tickets Booking</p>
+    <button onclick="scrollToSearch()">Book Now</button>
+  </section>
+
+  <section class="search-box" id="search">
+    <input type="text" placeholder="From Station" />
+    <input type="text" placeholder="To Station" />
+    <input type="date" />
+    <button>Search Trains</button>
+  </section>
+
+  <section class="features" id="services">
+    <div class="feature-card">✅ Secure Payment</div>
+    <div class="feature-card">🚄 Fast Booking</div>
+    <div class="feature-card">📞 24/7 Support</div>
+  </section>
+
+  <footer id="contact">
+    <p>IRCTC Demo Landing Page | Created for Portfolio</p>
+  </footer>
+
+  <script>
+    function scrollToSearch() {
+      document.getElementById('search').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
